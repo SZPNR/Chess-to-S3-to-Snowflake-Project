@@ -4,9 +4,9 @@
 
 ## General information
 
-In order not to exceed the limit authorized by the free version of AWS S3, I focused on a small database of less than one gigabyte. The data lake receives data from a python script and stores it as is. In order not to lose information for other users of the database I decided not to delete information from json files for the moment.
+In order not to exceed the limit authorized by the free version of AWS S3, I focused on a small database of less than one gigabyte. The data lake receives data from a python script and stores it as is. To not lose information for other users of the database I decided not to delete information from json files for the moment.
 
-In order to route the data to Snowflake I created an SQS event notification which ingests the data into SQS Queue and which will then be processed by Snowflake.
+To send the data to Snowflake I created an SQS event notification which ingests the data into SQS Queue and which will then be processed by Snowflake.
 
 ## Screenshot
 
