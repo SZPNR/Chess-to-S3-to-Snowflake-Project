@@ -9,38 +9,38 @@ For this we have created a Snowpipe which copies data into a json table on Snowf
 
 #### list_table:  
 <pre>
--username: varchar -- _username of the streamer_  
--is_live: binary -- _is the streamer currently on live_  
+-username: varchar -- username of the streamer
+-is_live: binary -- is the streamer currently on live
 </pre>
 
 #### info_table:  
 <pre>
--username: varchar  -- _username of the streamer_  
--followers: numeric -- _number of followers of twitch_    
--country: varchar  -- _country of the streamer_  
--joined: date -- _date the streamer joined chess.com_  
--location: varchar -- _city of the streamer_  
--name: varchar -- _full name of the streamer_  
--player_id: numeric 
--status: varchar -- _premium, admin, staff, basic_  
--title: varchar -- _FIDE title_  
+-username: varchar  -- username of the streamer
+-followers: numeric -- number of followers of twitch
+-country: varchar  -- country of the streamer
+-joined: date -- date the streamer joined chess.com
+-location: varchar -- city of the streamer
+-name: varchar -- full name of the streamer
+-player_id: numeric
+-status: varchar -- premium, admin, staff, basic 
+-title: varchar -- FIDE title
 -primary_key: numeric  
 </pre>
 #### stats_table:  
 <pre>
--last_blitz: numeric -- _elo of the last blitz game (3 to 5min game)_  
--draw_blitz: numeric  -- _number of draws in blitz games_  
--loss_blitz: numeric  -- _number of defeats in blitz games_  
--win_blitz: numeric  -- _number of wins in blitz games_  
--last_bullet: numeric  -- _elo of the last bullet game (less than 2min game)_  
--draw_bullet: numeric  -- _number of draws in bullet games_  
--loss_bullet: numeric  -- _number of defeats in bullet games_  
--win_bullet: numeric  -- _number of wins in bullet games_  
--last_rapid: numeric  -- _elo of the last rapid game (over 10min game)_  
--draw_rapid: numeric  -- _number of draws in rapid games_  
--loss_rapid: numeric  -- _number of defeats in rapid games_  
--win_rapid: numeric  -- _number of wins in rapid games_  
--FIDE: numeric -- _official FIDE ranking_  
+-last_blitz: numeric -- elo of the last blitz game (3 to 5min game)
+-draw_blitz: numeric  -- number of draws in blitz games
+-loss_blitz: numeric  -- number of defeats in blitz games
+-win_blitz: numeric  -- number of wins in blitz games
+-last_bullet: numeric  -- elo of the last bullet game (less than 2min game)
+-draw_bullet: numeric  -- number of draws in bullet games
+-loss_bullet: numeric  -- number of defeats in bullet games
+-win_bullet: numeric  -- number of wins in bullet games
+-last_rapid: numeric  -- elo of the last rapid game (over 10min game)
+-draw_rapid: numeric  -- number of draws in rapid games
+-loss_rapid: numeric  -- number of defeats in rapid games
+-win_rapid: numeric  -- number of wins in rapid games
+-FIDE: numeric -- official FIDE ranking
 -primary_key: numeric  
 </pre>
 
