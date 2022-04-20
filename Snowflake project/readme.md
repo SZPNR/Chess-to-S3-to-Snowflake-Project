@@ -2,7 +2,7 @@
 
 ` The goal of this project is to route the data from the SQS Queue through a Snowflake Pipeline (Snowpipe), to transform this data into a relational data table and then to extract useful information through SQL queries.`
 
-## File
+## Files
 
 `create_table.sql` create the three different tables for the data  
 `snowpipe_S3_to_Snowflake` create the data pipeline and the stages to transfer the data from the SQS Queue  
