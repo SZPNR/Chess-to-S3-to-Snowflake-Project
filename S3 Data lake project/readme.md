@@ -1,6 +1,22 @@
+# S3 Data Lake Project
+
+` The goal is to load data from the chess.com APIs and store them into three different and raw json files. The data will then be transferred and transformed in a data warehouse in Snowflake.`
+
+## General information
+
+In order not to exceed the limit authorized by the free version of AWS S3, I focused on a small database of less than one gigabyte. The data lake receives data from a python script and stores it as is. In order not to lose information for other users of the database I decided not to delete information from json files for the moment.
+
+In order to route the data to Snowflake I created an SQS event notification which ingests the data into SQS Queue and which will then be processed by Snowflake.
+
+## Screenshot
+
+Fig1. Screenshot of the bucket in AWS S3
 ![image](https://user-images.githubusercontent.com/94069984/164285817-880738c5-be0c-4db9-8e1e-987e70624986.png)
 
-list file presented as 
+## Metadata
+
+#### List file
+
 <pre>
 {  
   "username": "string",  
@@ -11,7 +27,7 @@ list file presented as
 }  
 </pre>
 
-info file presented as:
+#### Info file
 <pre>
 {
   "@id": "URL", // the location of this profile (always self-referencing)
@@ -32,7 +48,7 @@ info file presented as:
   "fide": "integer" // FIDE rating
 }
 </pre>
-stats file presentend as: 
+#### Stats file
 <pre>
 {  
   "chess_daily": {  
@@ -76,3 +92,7 @@ stats file presentend as:
    }  
 }  
 </pre>
+
+## Contact
+
+https://www.linkedin.com/in/simon-szpunar-9b9ba7144/
