@@ -19,15 +19,15 @@ info_table:
 stats_table:  
 -last_blitz: numeric -- _elo of the last blitz game (3 to 5min game)_  
 -draw_blitz: numeric  -- _number of draws in blitz games_  
--loss_blitz: numeric  -- _number of losses in blitz games_  
+-loss_blitz: numeric  -- _number of defeats in blitz games_  
 -win_blitz: numeric  -- _number of wins in blitz games_  
 -last_bullet: numeric  -- _elo of the last bullet game (less than 2min game)_  
--draw_bullet: numeric  
--loss_bullet: numeric  
--win_bullet: numeric  
+-draw_bullet: numeric  -- _number of draws in bullet games_  
+-loss_bullet: numeric  -- _number of defeats in bullet games_  
+-win_bullet: numeric  -- _number of wins in bullet games_  
 -last_rapid: numeric  -- _elo of the last rapid game (over 10min game)_  
--draw_rapid: numeric  
--loss_rapid: numeric  
--win_rapid: numeric  
+-draw_rapid: numeric  -- _number of draws in rapid games_  
+-loss_rapid: numeric  -- _number of defeats in rapid games_  
+-win_rapid: numeric  -- _number of wins in rapid games_  
 -FIDE: numeric -- _official FIDE ranking_  
 -primary_key: numeric  
