@@ -2,6 +2,12 @@
 
 ` The goal of this project is to route the data from the SQS Queue through a Snowflake Pipeline (Snowpipe), to transform this data into a relational data table and then to extract useful information through SQL queries.`
 
+## File
+
+`create_table.sql` create the three different tables for the data
+`snowpipe_S3_to_Snowflake` create the data pipeline and the stages to transfer the data from the SQS Queue
+`sql_queries` transform in order to retrieve useful information from the data
+
 ## General information
 
 In this project we want to extract the three JSON objects "list", "stats" and "info" located in the S3 data lake "chess-bucket". To facilitate this transfer we have created to store the data in an SQS Queue which we must now use to route the data to the Data >arehouse.
