@@ -4,9 +4,9 @@
 
 ## File
 
-`create_table.sql` create the three different tables for the data
-`snowpipe_S3_to_Snowflake` create the data pipeline and the stages to transfer the data from the SQS Queue
-`sql_queries` transform in order to retrieve useful information from the data
+`create_table.sql` create the three different tables for the data  
+`snowpipe_S3_to_Snowflake` create the data pipeline and the stages to transfer the data from the SQS Queue  
+`sql_queries` transform in order to retrieve useful information from the data  
 
 ## General information
 
