@@ -49,7 +49,7 @@ SELECT
   json_object.value:"fide" as fide
 from (select * from temp_pipe_stats) as stats_table_temp, LATERAL FLATTEN (input => PARSE_JSON(stats_table_temp.$1)) json_object);
 
--- --add identity column in order to connect info table and stats table 
+--add identity column in order to connect info table and stats table 
 
 select * from stats_table_temp;
 create or replace table stats_table LIKE stats_table_temp;
