@@ -10,7 +10,7 @@
 
 ## General information
 
-In this project we want to extract the three JSON objects "list", "stats" and "info" located in the S3 data lake "chess-bucket". To facilitate this transfer we have created to store the data in an SQS Queue which we must now use to route the data to the Data >arehouse.
+In this project we want to extract the three JSON objects "list", "stats" and "info" located in the S3 data lake "chess-bucket". To facilitate this transfer we have created an event trigger which allows the data to be stored in an SQS Queue which we must then use to transmit to the Data Warehouse.
 For this we have created a Snowpipe which copies data into a json table on Snowflake. From this json table we have created a table by recovering only the necessary columns which are:
 
 #### list_table:  
