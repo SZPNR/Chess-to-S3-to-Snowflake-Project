@@ -93,6 +93,4 @@ Fig1. Screenshot of the bucket in AWS S3
 }  
 </pre>
 
-## Contact
 
-https://www.linkedin.com/in/simon-szpunar-9b9ba7144/
