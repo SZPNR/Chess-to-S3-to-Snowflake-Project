@@ -61,6 +61,3 @@ Thanks to SQL queries we retrieved this information:
 - Average FIDE elo by their professional FIDE elo
 - Best player currently on live
 
-## Contact
-
-https://www.linkedin.com/in/simon-szpunar-9b9ba7144/
