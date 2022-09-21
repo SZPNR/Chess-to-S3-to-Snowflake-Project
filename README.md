@@ -37,4 +37,4 @@ The Airflow python script allows you to launch the API python script every hour 
 
 ## Contact
 
-Feel free to contact me at @SZPNR for further information or on linkedin:  
+Feel free to contact me at @SZPNR for further information
